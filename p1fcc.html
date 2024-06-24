@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="p1fccStyle.css">
+</head>
+<body>
+	
+
+	<form method="post" action="#" id="survey-form">
+			<fieldset>
+				<h1 id="title">Survey Form Project</h1>
+				<p id="description">Share your programming preferences with us! Please provide your name, email, and select your favorite programming languages and tools from the dropdowns. Your input will help us understand the developer community better.</p>
+			</fieldset>
+
+			<fieldset>
+				<h2>How we contact You</h2>
+				<div class="twoColumns">
+					<label id="name-label" class="widthFifty" for="name">Enter your First Name: 
+						<input id="name" type="text" name="first-name" placeholder="e.g. John" required>
+					</label>
+					<label class="widthFifty" for="lname">Enter your Last Name: 
+						<input id="lname" type="text" name="last-name" placeholder="e.g. Doe" required>
+					</label>
+				</div>
+				<label id="email-label" for="email">Enter your Email: 
+					<input id="email" type="email" name="email" placeholder="email@url.com" required>
+				</label>
+			</fieldset>
+
+
+
+			
+
+
+			<h2>About You</h2>
+			<fieldset>
+				<div class="twoColumns">
+
+					<div class="widthFifty">
+						<label>What is your gender?</label>
+						<label for="gender-female">
+							<input class="radio" id="gender-female" type="radio" name="gender-type" value="female" checked> Female
+						</label>
+						<label for="gender-male">
+							<input class="radio" id="gender-male" type="radio" name="gender-type" value="male"> Male
+						</label>
+						<label for="gender-other">
+							<input class="radio" id="gender-other" type="radio" name="gender-type" value="other"> Other
+						</label>
+						<label for="gender-nope">
+							<input class="radio" id="gender-nope" type="radio" name="gender-type" value="nope"> Prefer not to say
+						</label>
+					</div>
+
+					<div class="widthFifty">
+						<label id="number-label" for="number">Please tell us Your Age: 
+							<input id="number" type="number" name="age" min="5" max="120" pattern="[0-120]" placeholder="e.g. 18" required>
+						</label>
+
+						<br>
+
+						<label for="dropdown">Rate your programming skills: 
+							<select id="dropdown" name="ratingscale" required>
+								<option value="">(select one)</option>
+								<option value="1">Beginner</option>
+								<option value="2">Intermediate</option>
+								<option value="3">Advanced</option>
+								<option value="4">Expert</option>
+							</select>
+						</label>
+					</div>
+				</div>				
+
+				<br>
+
+				<label>Favorite Programming Language: </label>
+				<label for="java">
+					<input class="checkbox" id="java" type="checkbox" name="favlang" value="jave"> Java
+				</label>
+				<label for="cpp">
+					<input class="checkbox" id="cpp" type="checkbox" name="favlang" value="cpp"> C++
+				</label>
+				<label for="python">
+					<input class="checkbox" id="python" type="checkbox" name="favlang" value="python"> Python
+				</label>
+				<label for="favother">
+					<input class="checkbox" id="favother" type="checkbox" name="favlang" value="other"> Other
+				</label>
+			</fieldset>
+			<fieldset>
+				<label for="addComments">Provide  us with you opinion about the importance of programmers or what piece of advice would be great for somebody that is just starting:
+					<br><br>
+		        	<textarea id="addComments" name="addComments" rows="3" cols="30" placeholder="I think is very important for a programmer to..."></textarea>
+		        </label>
+			</fieldset>
+			<input id="submit" type="submit" value="Submit">
+			<br>
+	</form>
+	<br>
+
+</body>
+</html>
